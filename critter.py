@@ -216,7 +216,7 @@ def distance(x_1: int, y_1: int, x_2: int, y_2: int) -> int:
     """Each square, diagonal, horizontal or vertical, counts as 1."""
     return max(abs(x_2 - x_1), abs(y_2 - y_1))
 
-def direction_to_xy(self, direction: int) -> (int | None, int | None):
+def direction_to_xy(direction: int) -> (int | None, int | None):
     """Convert direction to xy-coordinates"""
     if direction == 1: 
         return 1, 0
@@ -237,7 +237,7 @@ def direction_to_xy(self, direction: int) -> (int | None, int | None):
     else:
         return None, None
 
-def xy_to_direction(self, x: int, y: int) -> int | None:
+def xy_to_direction(x: int, y: int) -> int | None:
     """Convert xy-coordinates to direction."""
     if x == 1 and y == 0:
         return 1
